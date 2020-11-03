@@ -1,0 +1,375 @@
+
+.centre{
+  margin: 0 auto;
+  width: 1200px;
+  background-color: #ffffff;
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+}
+
+
+a{
+    color: black;
+}
+
+a:hover{
+
+    color: #999999;
+}
+
+
+
+body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #999999;
+    
+}
+
+
+
+
+body header{
+    background-color:#eee;
+    height: 300px;
+    
+    display: flex;
+    
+}
+
+/* Rubrique En-tete de page */
+img{
+    border-radius: 100%;
+    width: 200px;
+    height: 200px;
+    transform: rotate(360deg);
+    object-fit: cover;
+    margin-left: 30px;
+    float: left;
+    position: relative;
+    top: 55px;
+    display: flex;
+}
+
+#moi{
+    
+    float: left;
+    position: relative;
+    margin-left:20px;
+    top: 60px;
+    font-size: 40px;
+    font-family: 'Oswald', sans-serif;
+    display: flex;
+    
+}
+
+.qualite{
+   position: relative;
+   top: 150px; 
+   right: 210px;
+   font-family: 'Cormorant SC', serif;
+   font-size: 20px;
+   display: flex;
+   height: 60px;
+}
+
+.contact{
+    float: right;
+    position: relative;
+    top: 175px;
+    left: 240px;
+    height: 100px;
+    padding-right: 20px;
+    font-size: 20px;
+    list-style-type: none;
+    font-family: 'Open Sans Condensed', sans-serif;
+    text-align: right;
+
+}
+/* Fin en-tete de page*/
+
+/* Petite descriptions */
+.description{
+    font-family: Arial, Helvetica, sans-serif;
+    padding-right: 30px;
+    padding-left: 30px;
+    
+}
+
+/*Rubrique Competences */
+.competences div {
+width: 400px;
+font-family: Arial, Helvetica, sans-serif;
+}
+
+.competences{
+display: flex;
+justify-content: space-evenly;
+padding-left: 22px;
+}
+
+.liste1{
+    font-family: 'Signika', sans-serif;
+}
+/*Fin rubrique competences */
+
+/* Rubrique Formations */
+
+.chiffre{
+    font-family: 'Niconne', cursive;
+    font-size: 20px;
+}
+
+.liste{
+    list-style-type: none;
+    padding-left: 3rem;
+    font-family: 'Signika', sans-serif;
+    
+    
+}
+
+
+
+.flex{
+        display:flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        height: 250px;
+    
+}
+
+.flex div{
+    height: 100px;
+    
+    
+}
+
+
+.box div:nth-child(1){
+    padding-left: 2rem;
+    
+}
+
+
+.box div:nth-child(2){
+    padding-left: 2rem;
+
+}
+
+/* fin de la rubrique formations*/
+
+
+/* Rubrique experience professionelle */
+.experience{
+    display:flex;
+    flex-direction: row;
+    height: 380px;
+    
+}
+
+.poste1{
+    margin-top: 10px;
+}
+
+.poste div:nth-child(2){
+
+    margin-top: 95px;
+}
+
+.poste{
+    margin-top: 30px;
+    height: 100px;
+}
+
+
+.cdi{
+    margin-left: 50px;
+    font-family: 'Signika', sans-serif;
+    margin-top: 40px; 
+}
+/*fin de la rubrique experience professionnelle*/
+
+/*special*/
+
+.date{
+    font-family: 'Niconne', cursive;
+    font-size: 20px;
+    padding-left: 2rem;
+}
+
+.categorie{
+    position: relative;
+    border-bottom: 2px solid #a9a9a9;
+    font-family: 'Anton', sans-serif;
+    padding-left: 1rem;
+    
+      
+}
+
+.diplome{
+    font-family: 'Signika', sans-serif;
+    font-weight: bold; 
+    font-size: 20px;
+}
+
+span.important{
+    font-family: 'Signika', sans-serif;
+    font-weight: bold; 
+    font-size: 20px;
+}
+
+.footer{
+    padding-bottom: 20px;
+}
+
+/*special media querie*/
+
+
+@media only screen and (max-width:1200px){
+    .centre {
+        width: 100%;
+        height: 100%;
+    }
+    .contact{
+        display: flex;
+        flex-direction: column;
+        float: left;
+        position: relative;
+        left: 10px;
+        top: 175px;
+        text-align: left;
+    }
+   
+}
+
+@media only screen and (max-width:890px){
+    .diplome {
+        font-size: 15px;
+        top: 20px;
+    }
+    .chiffre{
+        font-size: 15px;
+    }
+    .date{
+        font-size:15px;
+    }
+    span.important{
+        font-size: 15px; 
+    }
+
+}
+
+@media only screen and (max-width:860px){
+#moi{
+    font-size: 20px;
+    top: 10px;
+    right: 20px;
+}
+.contact{
+    top: 10px;
+    left: 310px;
+    position: absolute;
+    font-size: 15px; ;
+}
+.qualite{
+    top: 45px;
+    right: 150px;
+    font-size: 15px;
+    padding-left: 2rem;
+    
+}
+body header{
+    height: 140px;
+}
+img{
+   height: 100px;
+   width: 100px;
+   top: 30px;
+   right: 5px;     
+}
+
+}
+
+@media only screen and (max-width:550px){
+    
+
+body header{
+    height: 210px;
+}
+
+#moi{
+    padding-left: 1rem;
+    font-size: 17px;
+    position: absolute;
+    float: right;
+    top: 25px;
+    right: 150px;
+}
+.qualite{
+    top: 60px;
+    left: 110px;
+    position: absolute;
+    float:right;
+}
+
+
+.contact{
+    
+    position: absolute;
+    display: flex;
+    text-align:start;
+    left:0px;
+    top: 125px;
+}
+
+.competences{
+    
+    flex-direction: column;
+    
+}
+.liste{
+    padding-left: 1rem;
+}
+.competences div:first-child{
+    margin-right: 3rem;
+}  
+
+.liste1{
+    padding-left: 1rem;
+}
+.experience{
+    height: 500px;
+    justify-content: space-between;
+    
+}
+
+.poste div:first-child{
+margin-top: 20px;
+}
+
+.poste div:nth-child(2){
+    margin-top: 150px;
+}
+
+.cdi{
+    padding-right: 2rem;
+}
+
+.categorie{
+    font-size: 30px;
+}
+.competences div{
+    width: 100%;
+}
+body{
+    background-color: #ffffff;
+}
+
+.description{
+    text-align: justify;
+}
+
+}
